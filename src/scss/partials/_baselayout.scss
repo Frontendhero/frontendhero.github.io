@@ -3,6 +3,10 @@
   height: 100%;
   padding-left: 300px;
   @media screen and (max-width: 1024px) {
-    padding-left: 50px;
+    padding-left: 0;
+  }
+  &.show_mobile_nav {
+    overflow: hidden;
+    max-height: 100vh;
   }
 }
