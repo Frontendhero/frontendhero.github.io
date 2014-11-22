@@ -6,6 +6,22 @@
   left: 0;
   color: $white;
   background-color: $red;
+  @media screen and (max-width: 1024px) {
+    width: 50px;
+  }
+  .show_mobile_nav & {
+    width: 300px;
+  }
+  .mobile_collapse button {
+    width: 100%;
+    height: 50px;
+    display: none;
+    font-size: 1.8rem;
+    color: $red;
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+  }
   nav {
     padding: 1rem;
     ul {
@@ -21,6 +37,12 @@
         transition: 0.5s ease-in-out;
         &:hover {
           color: $black;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        padding-left: 2rem;
+        a {
+          display: none;
         }
       }
     }
