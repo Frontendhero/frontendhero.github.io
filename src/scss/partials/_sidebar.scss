@@ -1,8 +1,8 @@
 .sidebar {
   width: 300px;
-  height: 100vh;
+  height: 100%;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   color: $white;
   background-color: $red;
@@ -14,7 +14,7 @@
       padding-left: 0;
     }
     li {
-      line-height: 1.8;
+      line-height: 2.4;
       a {
         color: $white;
         text-decoration: none;

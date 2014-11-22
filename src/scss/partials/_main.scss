@@ -1,9 +1,11 @@
 .main {
-  float: left;
   width: 100%;
   section {
     article {
       padding: 1rem;
+      &.full {
+        padding: 0;
+      }
     }
   }
 }

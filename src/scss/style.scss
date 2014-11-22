@@ -3,6 +3,7 @@
 //----------------------------------*/
 
 @import 'mixins/_position.scss';
+@import 'mixins/_transition.scss';
 
 //----------------------------------*\
 // CONFIG MODULES
@@ -12,6 +13,7 @@
 @import 'modules/_vars.scss';
 @import 'modules/_clearfix.scss';
 @import 'modules/_defaults.scss';
+@import 'modules/_grid.scss';
 
 //----------------------------------*\
 // PARTIALS

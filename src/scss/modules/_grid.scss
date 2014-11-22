@@ -1,0 +1,30 @@
+.full {
+  @extend %clear;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.col {
+  float: left;
+  padding: 1.5rem 1.2rem 1.5rem 1.5rem;
+  text-align: left;
+  border-right: 1px solid lighten($black, 30%);
+  &:last-child {
+    border-right: 0;
+  }
+  &.col_half {
+    width: 50%;
+  }
+  &.col_third {
+    width: 33.33%;
+  }
+  &.col_quarter {
+    width: 25%;
+  }
+  &.col_fifth {
+    width: 20%;
+  }
+  &.col_sixth {
+    width: 16.66%;
+  }
+}
+
