@@ -1,5 +1,5 @@
 .sidebar {
-  width: 300px;
+  width: 0;
   height: 100%;
   position: fixed;
   bottom: 0;
@@ -7,18 +7,12 @@
   color: $white;
   background-color: $red;
   @include transition(ease-in-out width, .5s);
-  @media screen and (max-width: 1024px) {
-    width: 0;
-  }
   .mobile_collapse {
     width: 50px; height: 50px;
     position: absolute;
     top: 0; right: -50px;
-    display: none;
+    display: block;
     @include transition(ease-in-out right, .5s);
-    @media screen and (max-width: 1024px) {
-      display: block;
-    }
     button {
       width: 50px;
       .fa {
@@ -41,6 +35,11 @@
   }
   nav {
     padding: 1rem;
+    overflow: hidden;
+    width: 0;
+    .show_mobile_nav & {
+      width: 100%;
+    }
     ul {
       margin: 0 0 0 0;
       list-style: none;
@@ -52,22 +51,17 @@
         color: $white;
         text-decoration: none;
         transition: 0.5s ease-in-out;
-        &:hover {
-          color: $black;
-        }
-      }
-      @media screen and (max-width: 1024px) {
+        display: none;
         padding-left: 2rem;
         line-height: 3;
+        @include transition(ease-in-out right, .5s);
         .show_mobile_nav & {
+          display: block;
+          text-align: center;
           padding-left: 0;
         }
-        a {
-          display: none;
-          .show_mobile_nav & {
-            display: block;
-            text-align: center;
-          }
+        &:hover {
+          color: $black;
         }
       }
     }
